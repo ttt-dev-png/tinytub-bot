@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: tinytub-ops-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8937431040:AAGOCeq_vDlUjefnoBtzgU6Yt2SFaRZJTXY
+      - key: SUPABASE_URL
+        value: https://yestajnjkjzgxglavhdb.supabase.co
+      - key: SUPABASE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inllc3Rham5qa2p6Z3hnbGF2aGRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgwNjc1OTcsImV4cCI6MjA5MzY0MzU5N30.E3Odstz8TLdYvwYWP4nyFVMSeEHY4LRlqE9TLhfk8jQ
+      - key: ADMIN_CHAT_ID
+        value: REPLACE_WITH_YOUR_CHAT_ID
+      - key: BRIEF_HOUR
+        value: 8
